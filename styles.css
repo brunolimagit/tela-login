@@ -10,7 +10,7 @@ body {
   background: #020410;
 }
 .container-header {
-    position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,7 +37,7 @@ body {
   bottom: -6px;
   width: 100%;
   height: 2px;
-  background:  #ea8330;
+  background: #ea8330;
   border-radius: 5px;
   transform: translateY(10px);
   opacity: 0;
@@ -80,13 +80,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.banner-fundo{
-    width: 100%;
-    height: 100vh;
-    background: url(assets/levon-vardanyan-ihUVzI4f5To-unsplash.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px);
+.banner-fundo {
+  width: 100%;
+  height: 100vh;
+  background: url(assets/levon-vardanyan-ihUVzI4f5To-unsplash.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
 }
 .container {
   position: absolute;
@@ -99,6 +99,7 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  flex-wrap: wrap;
 }
 .container .content {
   position: absolute;
@@ -182,7 +183,7 @@ body {
   border: none;
   outline: none;
   font-size: 1rem;
-  color: #ea8330;
+  color: #e4e4e4;
   font-weight: 500;
   padding-right: 1.75rem;
 }
@@ -214,17 +215,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.div-lembrar label input{
-    accent-color: #ea8330;
-    margin-right: 3px;
+.div-lembrar label input {
+  accent-color: #ea8330;
+  margin-right: 3px;
 }
-.div-lembrar a{
-    text-decoration: none;
-    color: #e4e4e4;
-    transition: .5s;
+.div-lembrar a {
+  text-decoration: none;
+  color: #e4e4e4;
+  transition: 0.5s;
+  margin-bottom: 1rem;
 }
-.div-lembrar a:hover{
-    text-decoration: underline;
+.div-lembrar a:hover {
+  text-decoration: underline;
 }
 .botao-entrar {
   width: 100%;
@@ -238,4 +240,104 @@ body {
   color: #e4e4e4;
   font-weight: 500;
   box-shadow: 0 0 10px #ea8330;
+}
+.social-icons-form a i {
+  font-size: 1.3rem;
+  color: #e4e4e4;
+  margin-right: 0.7rem;
+  transition: 0.5s ease;
+}
+.social-icons-form {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.social-icons-form a i:hover {
+  transform: scale(1.5);
+}
+@media (max-width: 5000px) {
+  .social-icons-form {
+    display: none;
+  }
+}
+@media (max-width: 5000px) {
+  .logo-entrar {
+    display: none;
+  }
+}
+@media (max-width: 5000px) {
+  .log-box-media {
+    display: none;
+  }
+}
+@media (max-width: 1126px) {
+  .social-icons-form {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1126px) {
+  .social-icons {
+    display: none;
+  }
+}
+@media (max-width: 1220px) {
+  .text-sci {
+    margin-bottom: 9rem;
+  }
+  .content .logo {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1117px) {
+  .log-box {
+    display: none;
+  }
+  .text-sci {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .form-box h2{
+display: none;
+  }
+}
+@media (max-width: 1116px) {
+  .log-box-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(1.25rem);
+    color: #e4e4e4;
+    border-radius: 0.6rem;
+  }
+  .log-box-media h1{
+    display: block;
+    text-align: center;
+    color: #ea8330;
+    font-size: 4rem;
+    justify-content: center;
+    text-shadow: 1px 2px 10px #ea8330;
+  }
+  .social-icons-form {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner-fundo {
+    width: 100%;
+    height: 100vh;
+    background: url(assets/levon-vardanyan-ihUVzI4f5To-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur();
+  }
 }
